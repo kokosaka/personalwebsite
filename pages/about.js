@@ -1,13 +1,14 @@
 import Layout from '../components/layout';
 
-const Index = () => (
+const About = () => (
   <Layout>
     <div>
       <h1>
-        welcome to my site foo;
+        About Me;
       </h1>
+      <img src="/Resume.png"></img>
     </div>
   </Layout>
 )
 
-export default Index;
+export default About;
