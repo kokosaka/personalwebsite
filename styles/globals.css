@@ -2,11 +2,37 @@ html {
   overflow-y: scroll;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(92, 100, 181);
+  /* animation: fadeIn 3s; */
+  /* background-color: black; */
 }
 *:visited {
   color: rgb(92, 100, 181);
 }
-
+.home {
+  width: 100%;
+  /* top: 0; */
+  /* margin-top: 40vh; */
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+  /* margin-bottom: 10%; */
+  /* color: ; */
+  /* background-color: red; */
+  /* z-index: 1; */
+}
+.scroll-button {
+  background-color: rgb(92, 100, 181);
+  color: white;
+  border-radius: 30px;
+  margin: 40px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  /* background-color: violet; */
+}
 .body {
   /* padding: 0;
   margin: 0; */
@@ -20,23 +46,26 @@ html {
 }
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   position: fixed;
   top: 0;
-  width: 90%;
+  right: 5%;
+  width: 85%;
   height: 10%;
   /* background-color: red; */
 }
 
 .navbar-list {
+  display: flex;
+  align-items: flex-end;
   /* width: 70%; */
   /* justify-content: center; */
   /* font-size: large; */
   /* background-color: burlywood; */
-  display: flex;
   list-style-type: none;
-  padding: 15px;
+  /* right: ; */
+  /* padding: 15px; */
   /* margin: 20px; */
 }
 
@@ -44,13 +73,13 @@ html {
   /* background-color: cadetblue; */
   text-decoration: none;
   text-emphasis-color: white;
-  justify-content: center;
-  margin: 15px;
+  /* justify-content: center; */
+  margin-left: 30px;
 }
 
 .social-links {
-  position: absolute;
-  right: 10%;
+  position: fixed;
+  right: 5%;
   margin-top: 5%;
   width: 7%;
   /* padding: 10px; */
@@ -69,6 +98,26 @@ html {
 .save-resume {
   position: fixed;
   margin-top: 5%;
-  right: 9%;
+  right: 5%;
   text-decoration: none;
+}
+
+.project {
+  background-color: white;
+  display: flex;
+  width: 65%;
+  /* align-items: flex-start; */
+  padding: 10px;
+  border: 2px solid rgb(92, 100, 181);
+  /* border-width: 20px; */
+}
+
+.project-desc {
+  margin: 15px;
+  /* width: 40%; */
+  /* height: 100vh; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start; */
+  /* background-color: brown; */
 }
