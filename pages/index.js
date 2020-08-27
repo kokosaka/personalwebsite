@@ -27,7 +27,7 @@ class Index extends React.Component {
   render() {
     return (
       this.state.isLoading ?
-      <a>hello</a> :
+      <a className="loading">hello</a> :
     <Layout>
       <div className="home">
         {new Date().toLocaleTimeString('en-GB') < '12' ? 'good morning' : new Date().toLocaleTimeString('en-GB') < '18' ? 'good afternoon' : 'good evening' }
