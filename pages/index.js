@@ -5,7 +5,7 @@ import Footer from '../components/footer';
 class Index extends React.Component {
   constructor(props) {
     super(props);
-    this.state ={
+    this.state = {
       isLoading: true
     }
     this.myRef = React.createRef();
@@ -27,7 +27,9 @@ class Index extends React.Component {
   render() {
     return (
       this.state.isLoading ?
-      <a className="loading">hello</a> :
+      <div className="loading">
+        <div className="spinner"></div>
+      </div> :
     <Layout>
       <div className="home">
         {new Date().toLocaleTimeString('en-GB') < '12' ? 'good morning' : new Date().toLocaleTimeString('en-GB') < '18' ? 'good afternoon' : 'good evening' }
