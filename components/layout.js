@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Navbar from './navbar';
-import Footer from './footer';
+// import Footer from './footer';
 
 const Layout = (props) => (
   <div className="body">
@@ -9,7 +9,6 @@ const Layout = (props) => (
     </Head>
     <Navbar />
     {props.children}
-    <Footer />
   </div>
 );
 
