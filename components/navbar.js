@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Social from '../components/social';
+import Social from './social';
 
 const Navbar = () => (
   <div className="navbar">
