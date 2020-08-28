@@ -17,17 +17,15 @@ h2 {
 *:visited {
   color: rgb(92, 100, 181);
 }
-
 .spinner {
   width: 40px;
   height: 40px;
   background-color: rgb(92, 100, 181);
-
   margin: 100px auto;
   -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
   animation: sk-rotateplane 1.2s infinite ease-in-out;
 }
-body {
+.loaded {
   animation: fadeInAnimation ease 2.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -147,7 +145,6 @@ body {
   padding: 10px;
   margin: 10px;
   border: 2px solid rgb(92, 100, 181);
-  /* background-color: blueviolet; */
 }
 .project-img {
   margin: 15px;
@@ -157,7 +154,6 @@ body {
   width: 50%;
 }
 .project-links {
-  /* background-color: aqua; */
   display: flex;
   flex-direction: column;
   height: 70px;
@@ -195,11 +191,14 @@ body {
   }
   .bio {
     width: 100%;
-    font-size: large;
+    height: 100vh;
   }
   .bio-desc {
-    margin-top: 15vh;
+    margin-top: 0vh;
     width: 90%;
+  }
+  .applications {
+    padding-top: 50px;
   }
   .project {
     width: 90%;

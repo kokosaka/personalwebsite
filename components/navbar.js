@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Social from '../components/social';
 
 const Navbar = () => (
   <div className="navbar">
@@ -6,6 +7,7 @@ const Navbar = () => (
       <li ><Link href="/"><a className="navbar-item">home</a></Link></li>
       <li ><a href="/resume.pdf" className="navbar-item">résumé</a></li>
     </ul>
+    <Social />
   </div>
 );
 

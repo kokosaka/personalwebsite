@@ -2,7 +2,6 @@ import Layout from '../components/layout';
 import Link from 'next/link';
 import Footer from '../components/footer';
 import Bio from '../components/bio';
-import Social from '../components/social';
 import Applications from '../components/applications';
 
 class Index extends React.Component {
@@ -18,9 +17,10 @@ class Index extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({
-      isLoading: false
-    })
+    setTimeout(() =>
+      this.setState({
+        isLoading: false
+      }), 2000)
   }
 
   scrollToRef(e) {
@@ -43,18 +43,19 @@ class Index extends React.Component {
         <div className="spinner"></div>
       </div> :
     <Layout>
-      <div className="home">
-        {new Date().toLocaleTimeString('en-GB') < '12' ? 'good morning' : new Date().toLocaleTimeString('en-GB') < '18' ? 'good afternoon' : 'good evening' }
-        <button className='scroll-button' id="firstRef" onClick={this.scrollToRef}>whoami</button>
+      <div className="loaded">
+        <div className="home">
+          {new Date().toLocaleTimeString('en-GB') < '12' ? 'good morning' : new Date().toLocaleTimeString('en-GB') < '18' ? 'good afternoon' : 'good evening' }
+          <button className='scroll-button' id="firstRef" onClick={this.scrollToRef}>whoami</button>
+        </div>
+        <div ref={this.firstRef}>
+          <Bio scrollToRef={this.scrollToRef}/>
+        </div>
+        <div ref={this.secondRef} >
+          <Applications knowItAllGif={this.state.knowItAllGif} navBarGif={this.state.navBarGif} showGif={this.showGif}/>
+        </div>
+        <Footer />
       </div>
-      <Social />
-      <div ref={this.firstRef}>
-        <Bio scrollToRef={this.scrollToRef}/>
-      </div>
-      <div ref={this.secondRef} >
-        <Applications knowItAllGif={this.state.knowItAllGif} navBarGif={this.state.navBarGif} showGif={this.showGif}/>
-      </div>
-      <Footer />
     </Layout>
     )
   }
