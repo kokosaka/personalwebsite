@@ -8,9 +8,7 @@ const Loading = () => {
       targets: 'path',
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutSine',
-      duration: 1500,
-      delay: 250,
-      direction: 'alternate',
+      duration: 2000,
     });
   }, [])
   return (
