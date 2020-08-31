@@ -1,5 +1,5 @@
-import Eye from '../public/eye.svg';
-import Closed from '../public/closed.svg';
+import Eye from '../public/eye.js';
+import Closed from '../public/closed.js';
 
 const Applications = (props) => (
   <div className="applications">
@@ -19,8 +19,8 @@ const Applications = (props) => (
       </div>
       <div className="project-links">
         {props.knowItAllGif ?
-          <Closed id="knowItAllGif" className="eye" onClick={props.showGif}/> :
-          <Eye id="knowItAllGif" className="eye" onClick={props.showGif}/>
+          <Closed id="knowItAllGif" showGif={props.showGif}/> :
+          <Eye id="knowItAllGif" showGif={props.showGif}/>
         }
         <a href="https://github.com/know-it-alls">
           <img src="/github.png" width="25px"/>
@@ -52,8 +52,8 @@ const Applications = (props) => (
       </div>
       <div className="project-links">
         {props.navBarGif ?
-          <Closed id="navBarGif" onClick={props.showGif} /> :
-          <Eye id="navBarGif" onClick={props.showGif} />
+          <Closed id="navBarGif" showGif={props.showGif} /> :
+          <Eye id="navBarGif" showGif={props.showGif} />
         }
         <a href="https://github.com/Dumpling-Squad/nav-bar">
           <img src="/github.png" width="25px"/>
