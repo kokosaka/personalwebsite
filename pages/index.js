@@ -9,7 +9,7 @@ class Index extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoading: true
+      isLoading: true,
     }
     this.firstRef = React.createRef()
     this.secondRef = React.createRef()
@@ -21,7 +21,7 @@ class Index extends React.Component {
     setTimeout(() =>
       this.setState({
         isLoading: false
-      }), 2250)
+      }), 2750)
   }
 
   scrollToRef(e) {
@@ -36,7 +36,6 @@ class Index extends React.Component {
       [e.target.id]: !this.state.[e.target.id]
     })
   }
-
   render() {
     return (
       this.state.isLoading ?
