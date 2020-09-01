@@ -1,15 +1,23 @@
-const Social = () => (
-  <div className="social-links">
-    <a href="https://www.linkedin.com/in/kokosaka/">
-      <img src="/linkedin.png" width="25px" />
-    </a>
-    <a href="https://github.com/kokosaka">
-      <img src="/github.png" width="25px"/>
-    </a>
-    <a href="mailto:kobohkosaka@gmail.com">
-      <img src="/mail.png" width="25px"/>
-    </a>
-  </div>
-);
+import Mail from '../public/mail.js'
+import Github from '../public/github.js'
+import Linkedin from '../public/linkedin.js'
+
+const Social = () => {
+  var color = "rgb(108, 106, 187)";
+
+  return (
+    <div className="social-links">
+      <a className="link-icon" href="https://www.linkedin.com/in/kokosaka/">
+        <Linkedin fill={color}/>
+      </a>
+      <a className="link-icon" href="https://github.com/kokosaka">
+        <Github fill={color}/>
+      </a>
+      <a className="link-icon" href="mailto:kobohkosaka@gmail.com">
+        <Mail fill={color}/>
+      </a>
+    </div>
+  );
+}
 
 export default Social;

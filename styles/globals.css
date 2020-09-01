@@ -1,8 +1,8 @@
 html {
   overflow-y: scroll;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(92, 100, 181);
-  background-color: rgb(238, 238, 247)
+  color: rgb(108, 106, 187);
+  background-color: whitesmoke;
 }
 img {
   max-width: 100%;
@@ -17,9 +17,8 @@ h2 {
 h1 {
   text-align: center;
 }
-
 *:visited {
-  color: rgb(92, 100, 181);
+  color: rgb(108, 106, 187);
 }
 .body {
   animation: fadeInAnimation ease 2.5s;
@@ -51,7 +50,7 @@ h1 {
   font-size: xxx-large;
 }
 .scroll-button {
-  background-color: rgb(92, 100, 181);
+  background-color: rgb(108, 106, 187);
   color: white;
   border-radius: 30px;
   margin: 40px;
@@ -70,20 +69,18 @@ h1 {
   justify-content: flex-end;
   align-items: center;
   position: fixed;
-  top: 0;
-  width: 100%;
-  height: 10%;
-  z-index: 1;
+  right: 100px;
+  margin-top: 25px;
+  width: 125px;
 }
 .navbar-list {
   display: flex;
-  margin-right: 100px;
   justify-content: space-between;
-  width: 125px;
+  width: 100%;
   list-style-type: none;
+  padding-left: 0;
 }
 .navbar-item {
-  display: flex;
   text-decoration: none;
   text-emphasis-color: white;
 }
@@ -94,6 +91,10 @@ h1 {
   width: 125px;
   display: flex;
   justify-content: space-between;
+}
+.link-icon svg{
+  width: 30px;
+  height: 30px;
 }
 .bio {
   width: 100%;
@@ -125,7 +126,7 @@ h1 {
   width: 50%;
   padding: 10px;
   margin: 10px;
-  border: 2px solid rgb(92, 100, 181);
+  border: 2px solid rgb(108, 106, 187);
 }
 .project-img {
   margin: 15px;
@@ -153,7 +154,7 @@ h1 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgb(207,207,232);
+  background-color: rgb(207, 207, 207);
   margin-top: 5px;
   width: 100%;
   height: 30vh;

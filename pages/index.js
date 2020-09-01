@@ -9,7 +9,7 @@ class Index extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoading: true,
+      isLoading: false,
     }
     this.firstRef = React.createRef()
     this.secondRef = React.createRef()
@@ -17,7 +17,10 @@ class Index extends React.Component {
     this.showGif = this.showGif.bind(this)
   }
 
-  componentDidMount() {
+  componentWillMount() {
+    this.setState({
+      isLoading: true
+    });
     setTimeout(() =>
       this.setState({
         isLoading: false
