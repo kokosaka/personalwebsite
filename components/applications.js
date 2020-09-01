@@ -3,13 +3,29 @@ import Closed from '../public/closed.js';
 import Github from '../public/github.js';
 
 const Applications = (props) => {
-  var color = "rgb(108, 106, 187)"
+  var color = "#006816"
 
   return (
     <div className="applications">
       <h1>
         a little about my applications
       </h1>
+
+      <div className="project">
+        <div className="project-desc">
+          <h2>Fitness Tailor</h2>
+          <p>In Progress</p>
+        </div>
+        <div className="project-links">
+          {/* {props.fitnessTailorGif ?
+            <Closed id="fitnessTailorGif" showGif={props.showGif} fill={color}/> :
+            <Eye id="fitnessTailorGif" showGif={props.showGif} fill={color}/>
+          } */}
+          <a href="https://github.com/fitness-tailor">
+            <Github fill={color}/>
+          </a>
+        </div>
+      </div>
 
       <div className="project">
         {props.knowItAllGif &&

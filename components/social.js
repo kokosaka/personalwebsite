@@ -3,7 +3,7 @@ import Github from '../public/github.js'
 import Linkedin from '../public/linkedin.js'
 
 const Social = () => {
-  var color = "rgb(108, 106, 187)";
+  var color = "#006816";
 
   return (
     <div className="social-links">
