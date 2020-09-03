@@ -3,7 +3,7 @@ import Closed from '../public/closed.js';
 import Github from '../public/github.js';
 
 const Applications = (props) => {
-  var color = "#006816"
+  var color = "black"
 
   return (
     <div className="applications">

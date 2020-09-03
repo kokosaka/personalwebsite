@@ -3,7 +3,7 @@ import Logo from '../public/logo.js';
 import anime from 'animejs';
 
 const Loading = () => {
-  var color = "#006816";
+  var color = "rgb(92,94,181)";
 
   useEffect(() => {
     anime({

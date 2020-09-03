@@ -1,8 +1,8 @@
 html {
   overflow-y: scroll;
   font-family: Arial, Helvetica, sans-serif;
-  color: #006816;
-  background-color: rgb(255, 255, 255);
+  color: rgb(92,94,181);
+  background-color: rgb(206, 206, 228);
 }
 img {
   max-width: 100%;
@@ -18,7 +18,7 @@ h1 {
   text-align: center;
 }
 *:visited {
-  color: #006816;
+  color: rgb(92,94,181);
 }
 .body {
   animation: fadeInAnimation ease 2.5s;
@@ -50,7 +50,7 @@ h1 {
   font-size: xxx-large;
 }
 .scroll-button {
-  background-color:#006816;
+  background-color:rgb(92,94,181);;
   color: white;
   border-radius: 30px;
   margin: 40px;
@@ -126,7 +126,7 @@ h1 {
   width: 50%;
   padding: 10px;
   margin: 10px;
-  border: 2px solid #006816;
+  border: 2px solid rgb(92,94,181);;
 }
 .project-img {
   margin: 15px;
@@ -165,16 +165,17 @@ h1 {
   }
   .eye {
   display: none;
-}
+  }
   .navbar {
-    position: relative;
+    position: absolute;
+    right: 10px;
   }
   .navbar-list {
-    margin-right: 25px;
+    /* margin-right: 25px; */
   }
   .social-links {
     position: absolute;
-    right: 25px;
+    right: 0px;
   }
   .bio {
     width: 100%;
