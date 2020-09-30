@@ -1,7 +1,9 @@
 # kokosaka.com
 This is my personal website presenting who I am and the applications I have created.
 
-built with Next.js and hosted on Heroku.
+built with Next.js and hosted on Heroku (until September 30, 2020)
+Now hosted on Netlify
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Installation

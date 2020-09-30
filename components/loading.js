@@ -10,7 +10,7 @@ const Loading = () => {
       targets: 'path',
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutSine',
-      duration: 1500,
+      duration: 1250,
       delay: 500,
       endDelay: 750,
     });

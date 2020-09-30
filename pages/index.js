@@ -24,7 +24,7 @@ class Index extends React.Component {
     setTimeout(() =>
       this.setState({
         isLoading: false
-      }), 2750)
+      }), 2500)
   }
 
   scrollToRef(e) {
