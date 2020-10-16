@@ -5,6 +5,7 @@ import Bio from '../components/bio';
 import Loading from '../components/loading';
 import Applications from '../components/applications';
 
+
 class Index extends React.Component {
   constructor(props) {
     super(props);
@@ -38,7 +39,7 @@ class Index extends React.Component {
   }
   render() {
 
-  var color = "rgb(92,94,181)";
+  var color = "#07575B";
   var linkedIn = "rgb(1, 116, 179)"
 
     return (
