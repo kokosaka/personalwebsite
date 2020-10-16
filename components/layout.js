@@ -7,7 +7,7 @@ const Layout = (props) => (
     <Head>
       <title>Koboh Kosaka</title>
     </Head>
-    <Navbar />
+    <Navbar color={props.color} linkedIn={props.linkedIn}/>
     {props.children}
   </div>
 );

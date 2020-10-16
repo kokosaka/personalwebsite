@@ -37,10 +37,14 @@ class Index extends React.Component {
     })
   }
   render() {
+
+  var color = "rgb(92,94,181)";
+  var linkedIn = "rgb(1, 116, 179)"
+
     return (
       this.state.isLoading ?
-      <Loading /> :
-      <Layout>
+      <Loading color={color}/> :
+      <Layout color={color} linkedIn={linkedIn}>
         <div className="home">
           {new Date().toLocaleTimeString('en-GB') < '12' ? 'good morning' : new Date().toLocaleTimeString('en-GB') < '18' ? 'good afternoon' : 'good evening' }
           <button className='scroll-button' id="firstRef" onClick={this.scrollToRef}>whoami</button>

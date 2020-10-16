@@ -2,9 +2,7 @@ import React, { useEffect } from 'react';
 import Logo from '../public/logo.js';
 import anime from 'animejs';
 
-const Loading = () => {
-  var color = "rgb(92,94,181)";
-
+const Loading = (props) => {
   useEffect(() => {
     anime({
       targets: 'path',
@@ -18,7 +16,7 @@ const Loading = () => {
   }, [])
   return (
     <div className="loading">
-      <Logo fill={color}/>
+      <Logo fill={props.color}/>
     </div>
   );
 }
