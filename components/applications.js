@@ -3,7 +3,6 @@ import Closed from '../public/closed.js';
 import Github from '../public/github.js';
 
 const Applications = (props) => {
-  var color = "black"
 
   return (
     <div className="applications">
@@ -13,7 +12,7 @@ const Applications = (props) => {
 
       <div className="project">
         <div className="project-desc">
-          <h2>Fitness Tailor</h2>
+          <h2>Nutrific</h2>
           <p>In Progress</p>
         </div>
         <div className="project-links">
@@ -22,7 +21,7 @@ const Applications = (props) => {
             <Eye id="fitnessTailorGif" showGif={props.showGif} fill={color}/>
           } */}
           <a href="https://github.com/fitness-tailor">
-            <Github fill={color}/>
+            <Github fill={props.color}/>
           </a>
         </div>
       </div>
@@ -39,23 +38,23 @@ const Applications = (props) => {
         </div>
         <div className="project-links">
           {props.knowItAllGif ?
-            <Closed id="knowItAllGif" showGif={props.showGif} fill={color}/> :
-            <Eye id="knowItAllGif" showGif={props.showGif} fill={color}/>
+            <Closed id="knowItAllGif" showGif={props.showGif} fill={props.color}/> :
+            <Eye id="knowItAllGif" showGif={props.showGif} fill={props.color}/>
           }
           <a href="https://github.com/know-it-alls">
-            <Github fill={color}/>
+            <Github fill={props.color}/>
           </a>
         </div>
       </div>
 
       <div className="project">
         <div className="project-desc">
-          <h2>System Design Application</h2>
+          <h2>Alo Yoga Mock</h2>
           <p>I inherited a team members application (a carousel of products) with a focus on improving the backend. With an initial throughput of 8 requests per second (rps), I set a goal to have the service handle 1000 rps. The backend was built with MongoDB and I wanted to compare the same service but with a SQL database (PostgreSQL). After seeding and indexing the databases with 10 million products, I monitored the services with New Relic, stress testing with k6. The PostgreSQL database was handling more at 244 rps so I decided to move forward with the SQL database. I deployed the database and the service to an AWS EC2 instance; stress tested with loader.io. The service handled up to 594 rps with a stress test configured at 1000 clients sending a request every second for 1 minute. I decided to horizontally scale the service and deployed another instance of the service and a load balancer proxy (nginx). Once deployed and tested, the goal of 1000 rps was achieved; with a 0% error rate and 68ms latency.</p>
         </div>
         <div className="project-links">
           <a href="https://github.com/Dumplings-Reloaded/related-items">
-            <Github fill={color}/>
+            <Github fill={props.color}/>
           </a>
         </div>
       </div>
@@ -67,16 +66,16 @@ const Applications = (props) => {
         </a>}
 
         <div className="project-desc">
-          <h2>Front End Application</h2>
+          <h2>Glossier Mock</h2>
           <p>Teaming up with three other engineers, we recreated an item detail page mocking that of Glossier. Aside from creating a simple Express.js server and a MySQL database seeded from my AWS S3 bucket that held mock products; this application was focused heavily on the front-end. I chose to recreate the navigation bar because I wanted to challenge myself in solving the search function within the navigation bar. Glossier's search tab would filter the products upon the user's key press. This was achieved by sending the state of the search form to the back-end; querying the database at each keystroke. As for the best seller tabs, I designed the application to send a get request at the onHover of each tab to the corresponding category of makeup.</p>
         </div>
         <div className="project-links">
           {props.navBarGif ?
-            <Closed id="navBarGif" showGif={props.showGif} fill={color}/> :
-            <Eye id="navBarGif" showGif={props.showGif} fill={color}/>
+            <Closed id="navBarGif" showGif={props.showGif} fill={props.color}/> :
+            <Eye id="navBarGif" showGif={props.showGif} fill={props.color}/>
           }
           <a href="https://github.com/Dumpling-Squad/nav-bar">
-            <Github fill={color}/>
+            <Github fill={props.color}/>
           </a>
         </div>
       </div>

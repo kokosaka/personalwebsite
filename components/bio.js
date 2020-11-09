@@ -1,7 +1,7 @@
 const Bio = (props) => (
   <div className="bio">
     <h1>
-    a little about myself
+    a little about me
     </h1>
     <div className="bio-desc">
       <p>

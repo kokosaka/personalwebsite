@@ -1,8 +1,10 @@
 const Logo = (props) => (
-<svg width="156" height="210" viewBox="0 0 156 210" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M62.4951 3C59.7354 35.7996 59.8199 81.7103 62.4951 206.127C66.4737 147.641 73.6765 118.249 100.618 75.4622C60.9079 128.161 39.7409 143.776 3.41951 153.454C-2.31977 149.432 52.0186 132.21 93.6334 123.987C135.248 115.764 133.872 115.394 153 110.093" stroke={props.fill} strokeWidth="6" strokeLinecap="round" strokeLinejoin="round"/>
+<svg width="315" height="331" viewBox="0 0 315 331" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M158.3 89C156.663 108.461 156.713 135.701 158.3 209.522C160.661 174.82 164.935 157.381 180.92 131.994C157.359 163.262 144.8 172.527 123.249 178.269C119.844 175.883 152.084 165.664 176.776 160.786C201.467 155.907 200.651 155.687 212 152.542" stroke={props.fill} stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
+
 );
 
 
 export default Logo;
+

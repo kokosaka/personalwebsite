@@ -21,7 +21,7 @@ const Loading = (props) => {
 
   return (
     <div className="loading" style={{opacity: isMounted ? 1 : 0}}>
-      <Logo fill={props.color}/>
+      <Logo fill={props.color} style={{width: "100%"}} />
     </div>
   );
 }
