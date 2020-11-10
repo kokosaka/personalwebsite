@@ -10,7 +10,7 @@ const Loading = (props) => {
     anime({
       targets: 'path',
       strokeDashoffset: [anime.setDashoffset, 0],
-      easing: 'easeInOutSine',
+      easing: 'easeInOutExpo',
       direction: 'alternate',
       duration: 1000,
       delay: 250,
