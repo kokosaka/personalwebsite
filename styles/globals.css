@@ -1,6 +1,6 @@
 html {
   overflow-y: scroll;
-  font-family: Verdana, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: rgb(137,56,49);
   background-color: rgb(25, 27, 38);
 }
@@ -78,11 +78,18 @@ h1 {
   align-items: flex-end;
   position: fixed;
   top: 0;
-  height: 90px;
+  height: 100px;
   /* right: 100px; */
   /* margin-top: 25px; */
   width: 100%;
-  /* background-color: rgb(36, 38, 48); */
+  background-color: rgb(25, 27, 38);
+  transition: transform 100ms linear,
+}
+#slideIn {
+  transform: translateY(0);
+}
+#slideOut {
+  transform: translateY(-100px);
 }
 .navbar-list {
   display: flex;
@@ -155,6 +162,10 @@ h1 {
   margin: 15px;
   width: 50%;
 }
+.project-tools {
+  color: aliceblue;
+  opacity: 0.5;
+}
 .project-links {
   display: flex;
   flex-direction: column;
@@ -181,7 +192,7 @@ h1 {
 }
 @media screen and (max-width: 1500px) {
   .navbar {
-    position: absolute;
+    /* position: absolute; */
   }
   .bio-desc {
     margin-top: 10vh;
