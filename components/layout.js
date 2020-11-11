@@ -28,7 +28,7 @@ const Layout = (props) => {
       <Head>
         <title>Koboh Kosaka</title>
       </Head>
-        <Navbar id={showNav ? 'slideIn' : 'slideOut'} color={props.color} scrollToRef={props.scrollToRef} />
+        <Navbar id={showNav ? 'slideIn' : 'slideOut'} scrollToRef={props.scrollToRef} />
       {props.children}
     </div>
 );
