@@ -5,13 +5,13 @@ import Linkedin from '../public/linkedin.js'
 const Social = (props) => (
   <div className="social-links">
     <a className="link-icon" href="https://www.linkedin.com/in/kokosaka/">
-      <Linkedin fill={props.color}/>
+      <Linkedin />
     </a>
     <a className="link-icon" href="https://github.com/kokosaka">
-      <Github fill={props.color}/>
+      <Github />
     </a>
     <a className="link-icon" href="mailto:kobohkosaka@gmail.com">
-      <Mail fill={props.color}/>
+      <Mail />
     </a>
   </div>
 );

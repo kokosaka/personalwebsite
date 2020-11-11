@@ -22,7 +22,7 @@ const Applications = (props) => {
             <Eye id="fitnessTailorGif" showGif={props.showGif} fill={color}/>
           } */}
           <a href="https://github.com/fitness-tailor">
-            <Github fill={props.color}/>
+            <Github />
           </a>
         </div>
       </div>
@@ -44,7 +44,7 @@ const Applications = (props) => {
             <Eye id="knowItAllGif" showGif={props.showGif} fill={props.color}/>
           }
           <a href="https://github.com/know-it-alls">
-            <Github fill={props.color}/>
+            <Github />
           </a>
         </div>
       </div>
@@ -57,7 +57,7 @@ const Applications = (props) => {
         </div>
         <div className="project-links">
           <a href="https://github.com/Dumplings-Reloaded/related-items">
-            <Github fill={props.color}/>
+            <Github />
           </a>
         </div>
       </div>
@@ -79,7 +79,7 @@ const Applications = (props) => {
             <Eye id="navBarGif" showGif={props.showGif} fill={props.color}/>
           }
           <a href="https://github.com/Dumpling-Squad/nav-bar">
-            <Github fill={props.color}/>
+            <Github />
           </a>
         </div>
       </div>
