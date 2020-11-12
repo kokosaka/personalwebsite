@@ -5,6 +5,8 @@ import Bio from '../components/bio';
 import Loading from '../components/loading';
 import Applications from '../components/applications';
 import Falling from '../public/falling';
+import FallingTwo from '../public/fallingTwo';
+import FallingThree from '../public/fallingThree';
 
 
 class Index extends React.Component {
@@ -38,6 +40,8 @@ class Index extends React.Component {
     let currScroll = window.scrollY;
     if(this.fallMount) {
       document.getElementById('falling').style.marginTop = currScroll*0.5
+      document.getElementById('fallingTwo').style.marginTop = currScroll*0.7
+      document.getElementById('fallingThree').style.marginTop = currScroll*0.9
     }
   }
 
@@ -64,7 +68,9 @@ class Index extends React.Component {
       <Loading color={loadingColor}/> :
       <Layout scrollToRef={this.scrollToRef} >
         <div className="falling-back" ref={this.setFallMount}>
+          <FallingThree />
           <Falling />
+          <FallingTwo />
         </div>
         <div className="home">
           {new Date().toLocaleTimeString('en-GB') < '12' ? 'good morning' : new Date().toLocaleTimeString('en-GB') < '18' ? 'good afternoon' : 'good evening' }

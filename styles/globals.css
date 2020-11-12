@@ -52,7 +52,15 @@ h1 {
 }
 #falling {
   width: 20%;
-  stroke: rgb(90, 67, 67);
+  stroke: rgb(54, 42, 42);
+}
+#fallingTwo {
+  width: 10%;
+  stroke: rgb(95, 45, 45);
+}
+#fallingThree {
+  width: 10%;
+  stroke: rgb(102, 74, 74);
 }
 .loading svg {
   /* width: 40px;
