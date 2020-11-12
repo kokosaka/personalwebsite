@@ -4,6 +4,7 @@ import Footer from '../components/footer';
 import Bio from '../components/bio';
 import Loading from '../components/loading';
 import Applications from '../components/applications';
+import Falling from '../public/falling';
 
 
 class Index extends React.Component {
@@ -16,6 +17,7 @@ class Index extends React.Component {
     this.secondRef = React.createRef()
     this.scrollToRef = this.scrollToRef.bind(this)
     this.showGif = this.showGif.bind(this)
+    this.moveFalling = this.moveFalling.bind(this)
   }
 
   componentDidMount() {
@@ -23,7 +25,15 @@ class Index extends React.Component {
       this.setState({
         isLoading: false
       }), 3000)
+
+    document.addEventListener('scroll', this.moveFalling)
   }
+
+  moveFalling() {
+    let currScroll = window.scrollY;
+    document.getElementById('falling').style.marginTop = currScroll*0.5
+  }
+
 
   scrollToRef(e) {
     var id = e.target.id;
@@ -46,6 +56,9 @@ class Index extends React.Component {
       this.state.isLoading ?
       <Loading color={loadingColor}/> :
       <Layout scrollToRef={this.scrollToRef} >
+        <div className="falling-back" >
+          <Falling />
+        </div>
         <div className="home">
           {new Date().toLocaleTimeString('en-GB') < '12' ? 'good morning' : new Date().toLocaleTimeString('en-GB') < '18' ? 'good afternoon' : 'good evening' }
           <button className='scroll-button' id="firstRef" onClick={this.scrollToRef}>whoami</button>
