@@ -52,7 +52,7 @@ h1 {
 }
 #falling {
   width: 20%;
-  /* stroke: rgb(90, 0, 0); */
+  stroke: rgb(90, 67, 67);
 }
 .loading svg {
   /* width: 40px;
@@ -283,5 +283,8 @@ h1 {
   .footer {
    font-size: 12px;
    text-align: center;
+  }
+  #falling {
+    width: 40%;
   }
 }

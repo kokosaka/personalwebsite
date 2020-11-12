@@ -15,8 +15,10 @@ class Index extends React.Component {
     }
     this.firstRef = React.createRef()
     this.secondRef = React.createRef()
+    this.fallMount = null;
     this.scrollToRef = this.scrollToRef.bind(this)
     this.showGif = this.showGif.bind(this)
+    this.setfallMount = this.setFallMount.bind(this)
     this.moveFalling = this.moveFalling.bind(this)
   }
 
@@ -25,15 +27,19 @@ class Index extends React.Component {
       this.setState({
         isLoading: false
       }), 3000)
-
     document.addEventListener('scroll', this.moveFalling)
+  }
+
+  setFallMount = element => {
+    this.fallMount = element;
   }
 
   moveFalling() {
     let currScroll = window.scrollY;
-    document.getElementById('falling').style.marginTop = currScroll*0.5
+    if(this.fallMount) {
+      document.getElementById('falling').style.marginTop = currScroll*0.5
+    }
   }
-
 
   scrollToRef(e) {
     var id = e.target.id;
@@ -50,13 +56,14 @@ class Index extends React.Component {
 
   render() {
   var socialColor = "rgb(219, 214, 214)";
+
   var loadingColor = "rgb(137,56,49)"
 
     return (
       this.state.isLoading ?
       <Loading color={loadingColor}/> :
       <Layout scrollToRef={this.scrollToRef} >
-        <div className="falling-back" >
+        <div className="falling-back" ref={this.setFallMount}>
           <Falling />
         </div>
         <div className="home">
