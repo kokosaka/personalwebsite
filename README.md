@@ -21,4 +21,5 @@ npm run build
 npm start
 ```
 
-v1. August 27, 2020
+v1. August 27, 2020 (Green)
+v2. November 13, 2020 (Red Falling)
