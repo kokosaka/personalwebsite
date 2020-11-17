@@ -11,7 +11,7 @@ const MobileNav = (props) => {
     <div >
       {showMenu ?
       <div>
-        <div className="menuContainer" >
+        <div className="menuContainer" onClick={()=>{setShowMenu(false)}}>
         </div>
           <div className="mobileMenu" >
             <div className="mobileMenu-icon" onClick={()=>{setShowMenu(false)}}>
