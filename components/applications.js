@@ -13,7 +13,8 @@ const Applications = (props) => {
       <div className="project">
         <div className="project-desc">
           <h2>Nutrific</h2>
-          <p>In Progress</p>
+          <p>A health-conscious phone application that calculates your BMI, BMR, and calorie expenditure according to your physical fitness. The application also lets you log what you eat and calculates how many calories you need to meet your weight maintenance goals, on the daily journal. <br></br><br></br>
+          The application is built in Javascript, React Native, Redux for a fluid user experience. User information is stored in Google Firebase Realtime Database and Authentication using email and password verification. </p>
           <div className="project-tools">Google FireBase - Redux - React Native - Expo</div>
         </div>
         <div className="project-links">
@@ -21,7 +22,7 @@ const Applications = (props) => {
             <Closed id="fitnessTailorGif" showGif={props.showGif} fill={color}/> :
             <Eye id="fitnessTailorGif" showGif={props.showGif} fill={color}/>
           } */}
-          <a href="https://github.com/fitness-tailor">
+          <a href="https://github.com/nutrific/nutrific-client">
             <Github />
           </a>
         </div>
