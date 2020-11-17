@@ -8,7 +8,7 @@ const MobileNav = (props) => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="mobileNav" >
+    <div >
       {showMenu ?
         <div className="mobileMenu" >
           <div className="mobileMenu-icon" onClick={()=>{setShowMenu(false)}}>
