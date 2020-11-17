@@ -277,6 +277,9 @@ h1 {
   /* .menuIcon:hover {
 
   } */
+  .mobileIconLine {
+    stroke: rgb(137,56,49);
+  }
   .closeIcon {
     width: 30px;
     height: 30px;
