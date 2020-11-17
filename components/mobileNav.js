@@ -8,7 +8,7 @@ const MobileNav = (props) => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div >
+    <div className="mobileNav">
       {showMenu ?
         <div className="mobileMenu" >
           <div className="mobileMenu-icon" onClick={()=>{setShowMenu(false)}}>
@@ -19,8 +19,10 @@ const MobileNav = (props) => {
             <a href="/Resume2020.pdf" className="navbar-item">résumé</a>
             <Social />
         </div> :
-        <div className="mobileMenu-icon" id={props.id} onClick={()=>{setShowMenu(true)}}>
-          <MenuIcon />
+        <div className="mobileNavbar" id={props.id}>
+          <div className="mobileMenu-icon"  onClick={()=>{setShowMenu(true)}}>
+            <MenuIcon />
+          </div>
         </div> }
       </div>
   );
