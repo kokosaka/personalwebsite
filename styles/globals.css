@@ -271,8 +271,8 @@ h1 {
     /* background-color: burlywood; */
   }
   .menuIcon {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
   }
   /* .menuIcon:hover {
 
@@ -281,8 +281,8 @@ h1 {
     stroke: rgb(137,56,49);
   }
   .closeIcon {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
   }
   .mobileNavbar {
     position: fixed;
@@ -333,7 +333,7 @@ h1 {
     display: none;
   }
   .navbar-item {
-    margin-top: 70px;
+    margin-top: 90px;
     margin-right: 10px;
   }
   /* .navbar-list {
@@ -342,7 +342,7 @@ h1 {
   .social-links {
     /* position: absolute; */
     margin-right: 0px;
-    margin-top: 70px;
+    margin-top: 90px;
     /* background-color: cadetblue; */
     justify-content: space-evenly;
     width: 90%;
