@@ -14,6 +14,9 @@ class Index extends React.Component {
     super(props);
     this.state = {
       isLoading: true,
+      knowItAllGif: false,
+      navBarGif: false,
+      nutrific: false,
     }
     this.firstRef = React.createRef()
     this.secondRef = React.createRef()
@@ -60,7 +63,6 @@ class Index extends React.Component {
 
   render() {
   var socialColor = "rgb(219, 214, 214)";
-
   var loadingColor = "rgb(137,56,49)"
 
     return (
@@ -80,7 +82,7 @@ class Index extends React.Component {
           <Bio scrollToRef={this.scrollToRef}/>
         </div>
         <div ref={this.secondRef} >
-          <Applications knowItAllGif={this.state.knowItAllGif} navBarGif={this.state.navBarGif} showGif={this.showGif} color={socialColor}/>
+          <Applications knowItAllGif={this.state.knowItAllGif} navBarGif={this.state.navBarGif} nutrific={this.state.nutrific} showGif={this.showGif} color={socialColor}/>
         </div>
         <Footer />
       </Layout>

@@ -1,6 +1,7 @@
 import Eye from '../public/eye.js';
 import Closed from '../public/closed.js';
 import Github from '../public/github.js';
+import NutrificCarousel from './nutrificCarousel.js';
 
 const Applications = (props) => {
 
@@ -11,6 +12,7 @@ const Applications = (props) => {
       </h1>
 
       <div className="project">
+        {props.nutrific && <NutrificCarousel />}
         <div className="project-desc">
           <h2>Nutrific</h2>
           <p>A health-conscious phone application that calculates your BMI, BMR, and calorie expenditure according to your physical fitness. The application also lets you log what you eat and calculates how many calories you need to meet your weight maintenance goals, on the daily journal. <br></br><br></br>
@@ -18,10 +20,10 @@ const Applications = (props) => {
           <div className="project-tools">Google FireBase - Redux - React Native - Expo</div>
         </div>
         <div className="project-links">
-          {/* {props.fitnessTailorGif ?
-            <Closed id="fitnessTailorGif" showGif={props.showGif} fill={color}/> :
-            <Eye id="fitnessTailorGif" showGif={props.showGif} fill={color}/>
-          } */}
+          {props.nutrific ?
+            <Closed id="nutrific" showGif={props.showGif} fill={props.color}/> :
+            <Eye id="nutrific" showGif={props.showGif} fill={props.color}/>
+          }
           <a href="https://github.com/nutrific/nutrific-client">
             <Github />
           </a>
