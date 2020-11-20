@@ -1,4 +1,4 @@
-# kokosaka.com
+# kokosaka.com(https://www.kokosaka.com/)
 This is my personal website presenting who I am and the applications I have created.
 
 built with Next.js and hosted on Heroku (until September 30, 2020)
