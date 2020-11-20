@@ -1,4 +1,4 @@
-# kokosaka.com(https://www.kokosaka.com/)
+# [kokosaka.com](https://www.kokosaka.com/)
 This is my personal website presenting who I am and the applications I have created.
 
 built with Next.js and hosted on Heroku (until September 30, 2020)
@@ -21,5 +21,5 @@ npm run build
 npm start
 ```
 
-v1. August 27, 2020 (Green)
+v1. August 27, 2020 (Green) <br>
 v2. November 13, 2020 (Red Falling)
