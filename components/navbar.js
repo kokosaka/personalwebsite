@@ -7,7 +7,7 @@ const Navbar = (props) => (
     <ul className="navbar-list">
       <li ><a className="navbar-item" id="firstRef" onClick={props.scrollToRef}>about</a></li>
       <li ><a className="navbar-item" id="secondRef" onClick={props.scrollToRef}>experience</a></li>
-      <li ><a href="/Resume2020.pdf" className="navbar-item">résumé</a></li>
+      <li ><a href="/resume.pdf" className="navbar-item">résumé</a></li>
     </ul>
     <Social />
   </div>
