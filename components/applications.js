@@ -8,9 +8,8 @@ const Applications = (props) => {
   return (
     <div className="applications">
       <h1>
-        a little about my applications
+        applications
       </h1>
-
       <div className="project">
         {props.nutrific && <NutrificCarousel />}
         <div className="project-desc">
