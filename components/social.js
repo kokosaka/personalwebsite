@@ -1,6 +1,6 @@
-import Mail from '../public/mail.js'
-import Github from '../public/github.js'
-import Linkedin from '../public/linkedin.js'
+import Mail from "../public/mail.js";
+import Github from "../public/github.js";
+import Linkedin from "../public/linkedin.js";
 
 const Social = (props) => (
   <div className="social-links">
@@ -15,6 +15,5 @@ const Social = (props) => (
     </a>
   </div>
 );
-
 
 export default Social;
