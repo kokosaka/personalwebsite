@@ -13,8 +13,8 @@ const Loading = (props) => {
       easing: "easeInOutExpo",
       direction: "alternate",
       duration: 800,
-      delay: 200,
-      // endDelay: 350,
+      delay: 100,
+      endDelay: 100,
     });
     return () => clearTimeout(timeout);
   }, []);
