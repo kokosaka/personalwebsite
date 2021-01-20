@@ -12,9 +12,9 @@ const Loading = (props) => {
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: "easeInOutExpo",
       direction: "alternate",
-      duration: 1000,
-      delay: 250,
-      endDelay: 350,
+      duration: 800,
+      delay: 200,
+      // endDelay: 350,
     });
     return () => clearTimeout(timeout);
   }, []);
