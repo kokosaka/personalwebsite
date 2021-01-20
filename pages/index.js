@@ -2,7 +2,7 @@ import Layout from "../components/layout";
 import Link from "next/link";
 import Footer from "../components/footer";
 import Bio from "../components/bio";
-import Loading from '../components/loading';
+// import Loading from '../components/loading';
 import Applications from "../components/applications";
 import Falling from "../public/falling";
 import FallingTwo from "../public/fallingTwo";
@@ -12,7 +12,7 @@ class Index extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoading: true,
+      // isLoading: true,
       knowItAllGif: false,
       navBarGif: false,
       nutrific: false,
@@ -27,10 +27,10 @@ class Index extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(() =>
-      this.setState({
-        isLoading: false
-      }), 2000)
+    // setTimeout(() =>
+    //   this.setState({
+    //     isLoading: false
+    //   }), 2000)
     document.addEventListener("scroll", this.moveFalling);
   }
 
@@ -63,11 +63,11 @@ class Index extends React.Component {
 
   render() {
     var socialColor = "rgb(219, 214, 214)";
-    var loadingColor = "rgb(137,56,49)"
+    // var loadingColor = "rgb(137,56,49)"
 
     return (
-      this.state.isLoading ?
-      <Loading color={loadingColor}/> :
+      // this.state.isLoading ?
+      // <Loading color={loadingColor}/> :
       <Layout scrollToRef={this.scrollToRef}>
         <div className="falling-back" ref={this.setFallMount}>
           <FallingThree />
