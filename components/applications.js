@@ -10,6 +10,29 @@ const Applications = (props) => {
       <div className="project">
         {props.nutrific && <NutrificCarousel />}
         <div className="project-desc">
+          <h2>
+            <a href="https://brisk-talk.com/">brisk-talk.com</a>
+          </h2>
+          <p>
+            The application is built in Javascript, React, for an intuitive user
+            experience. Utilizing AWS API Gateway, Lambda and DynamoDB in the
+            backend for persistent client connection.
+          </p>
+          <div className="project-tools">
+            Javascript - React - <br></br>
+            AWS Lambda - AWS WebSocket API Gateway - DynamoDB
+          </div>
+        </div>
+        <div className="project-links">
+          <a href="https://github.com/kokosaka/simple-chat">
+            <Github />
+          </a>
+        </div>
+      </div>
+
+      <div className="project">
+        {props.nutrific && <NutrificCarousel />}
+        <div className="project-desc">
           <h2>Nutrific</h2>
           <p>
             A health-conscious phone application that calculates your BMI, BMR,
