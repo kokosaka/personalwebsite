@@ -8,7 +8,6 @@ const Applications = (props) => {
     <div className="applications">
       <h1>applications</h1>
       <div className="project">
-        {props.nutrific && <NutrificCarousel />}
         <div className="project-desc">
           <h2>
             <a href="https://brisk-talk.com/">brisk-talk.com</a>
