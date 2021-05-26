@@ -9,7 +9,7 @@ const Applications = (props) => {
       <h1>applications</h1>
       <div className="project">
         <div className="project-desc">
-          <h2>
+          <h2 className="brisktalk">
             <a href="https://brisk-talk.com/">brisk-talk.com</a>
           </h2>
           <p>
