@@ -8,7 +8,7 @@ const Bio = (props) => (
         and I am a software engineer<br></br>
         located in Los Angeles, California.
       </p>
-      <p>
+      {/* <p>
         Working on several applications in an agile team environment, I have
         acquired solid web development, critical thinking, and effective
         communication experience. While keeping "learn new technologies" high on
@@ -25,7 +25,7 @@ const Bio = (props) => (
         implemented other tech stacks such as PostgreSQL, MySQL, supplemented
         React with Redux, applying cloud-based storage with AWS EC2, even
         implementing serverless architecture with Google Firebase.
-      </p>
+      </p> */}
       <p>
         ‣ August, 2020 - Graduated from SEI bootcamp and now looking for a
         position to contribute to an organization and create new software.
