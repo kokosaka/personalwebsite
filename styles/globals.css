@@ -170,7 +170,7 @@ h1 {
 }
 .bio-desc {
   margin-top: 10vh;
-  width: 30%;
+  width: 40%;
 }
 .bio-name {
   font-size: 42px;
@@ -184,8 +184,18 @@ h1 {
 }
 .brisktalk a {
   text-decoration: none;
-  color: brown;
+  color: rgb(161, 64, 64);
+  animation: blink 0.5s ease-in infinite alternate;
 }
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .project {
   display: flex;
   justify-content: center;
@@ -193,7 +203,7 @@ h1 {
   width: 50%;
   padding: 10px;
   margin: 10px;
-  border: 2px solid rgb(137, 56, 49);
+  border: 1px solid rgb(87, 36, 31);
 }
 .center {
   display: block;
